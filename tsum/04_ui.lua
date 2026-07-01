@@ -227,7 +227,7 @@ local function loadMainUI()
     if State.remoteSpyEnabled then
         task.defer(createRemoteSpyGui)
     end
-    TSUM_loadEmbeddedCatalogAsync(function())
+    TSUM_loadEmbeddedCatalogAsync(function()
         if State.espEnabled then
             refreshESP()
         end
